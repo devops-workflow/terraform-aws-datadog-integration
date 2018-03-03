@@ -18,6 +18,16 @@ output "cloudtrail_policy_name" {
   value       = "${element(concat(aws_iam_policy.datadog_cloudtrail.*.arn, list("")), 0)}"
 }
 
+output "logging_policy_arn" {
+  description = "Datadog Logging integration policy ARN"
+  value       = "${element(concat(aws_iam_policy.datadog_logging.*.arn, list("")), 0)}"
+}
+
+output "logging_policy_name" {
+  description = "Datadog Logging integration policy name"
+  value       = "${element(concat(aws_iam_policy.datadog_logging.*.arn, list("")), 0)}"
+}
+
 output "policy_arn" {
   description = "Datadog standard integration policy ARN"
   value       = "${element(concat(aws_iam_policy.datadog.*.arn, list("")), 0)}"
