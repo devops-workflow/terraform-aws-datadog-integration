@@ -1,0 +1,15 @@
+
+Setup IAM permissions to access everything for monitoring
+
+Datadog Clients: https://docs.datadoghq.com/developers/libraries/
+python, ruby, curl,
+
+python:
+https://datadogpy.readthedocs.io/en/latest/
+http://pydoc.datadoghq.com/en/latest/
+
+D/L all existing dashboards
+D/L all existing monitors
+D/L all existing users
+
+Script to convert to terraform ?
