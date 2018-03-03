@@ -52,6 +52,7 @@ variable "policy_name" {
   description = "The name for the IAM policy created to give Datadog permissions"
   default     = "DatadogAWSIntegrationPolicy"
 }
+
 variable "policies_path" {
   description = "Path for IAM policies"
   default     = "/"
